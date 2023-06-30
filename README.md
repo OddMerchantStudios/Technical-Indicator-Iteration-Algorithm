@@ -60,9 +60,9 @@ This project will focus on creating, back testing, forecasting, and analyzing al
 - Gather relevant features such as opening price, closing price, highest price, lowest price, and volume for each time intervals. 
 - Time Periods: Model Building
   - Training and back-testing period: 10 years (normal train/test split)
-  - 2017 – 2019
+  - 2017 – 2020
 - Forecasting: Quant Algo Fund Simulation - Forward testing period: 5 years (yearly)
-  - 2018 – 2022
+  - 2021 – 2023
 
 2. Data Preprocessing:
    - Perform data cleaning by handling missing values,  outliers, and inconsistencies.
