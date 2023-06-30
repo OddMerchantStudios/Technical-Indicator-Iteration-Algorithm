@@ -18,37 +18,37 @@ This project will focus on creating, back testing, forecasting, and analyzing al
   - MACD Two-Line
   - ADX Indicator
   - Other potential features to test: Stochastic Oscillator, RSI
-- Fundamental metrics under considering for model building and forecasting include:
-  - P/E ratio
-  - Industry Sector
-  - Price-Sales
-  - Price-Book
-  - PEG Ratio
-  - Net Profit Margin
-  - ROE
-  - ROA
-  - ROI
-  - EPS beat last quarter (Y/N)
-  - % EPS beats last 4 quarter’s (x/4)
-  - % EPS beats last 8 quarter’s (x/8)
-  - EPS beat % last quarter (x%)
-  - % EPS beats last 4 quarter’s (x%)
-  - % EPS beats last 8 quarter’s (x%)
-  - Sales beat last quarter (Y/N)
-  - % Sales beats last 4 quarter’s (x/4)
-  - % Sales beats last 8 quarter’s (x/8)
-  - Sales beat % last quarter (x%)
-  - % Sales beats last 4 quarter’s (x%)
-  - % Sales beats last 8 quarter’s (x%)
-  - Forward guidance change (up/down/no)
-  - % guidance change (+/-/0)
-  - EBITDA
+- ~~Fundamental metrics under considering for model building and forecasting include:~~
+  - ~~P/E ratio~~
+  - ~~Industry Sector~~
+  - ~~Price-Sales~~
+  - ~~Price-Book~~
+  - ~~PEG Ratio~~
+  - ~~Net Profit Margin~~
+  - ~~ROE~~
+  - ~~ROA~~
+  - ~~ROI~~
+  - ~~EPS beat last quarter (Y/N)~~
+  - ~~% EPS beats last 4 quarter’s (x/4)~~
+  - ~~% EPS beats last 8 quarter’s (x/8)~~
+  - ~~EPS beat % last quarter (x%)~~
+  - ~~% EPS beats last 4 quarter’s (x%)~~
+  - ~~% EPS beats last 8 quarter’s (x%)~~
+  - ~~Sales beat last quarter (Y/N)~~
+  - ~~% Sales beats last 4 quarter’s (x/4)~~
+  - ~~% Sales beats last 8 quarter’s (x/8)~~
+  - ~~Sales beat % last quarter (x%)~~
+  - ~~% Sales beats last 4 quarter’s (x%)~~
+  - ~~% Sales beats last 8 quarter’s (x%)~~
+  - ~~Forward guidance change (up/down/no)~~
+  - ~~% guidance change (+/-/0)~~
+  - ~~EBITDA~~
 
 - Trading Timeframes for data collection and analysis include:
-  - Intra-Day:
-    - 2m
-    - 3m
-    - 5m
+  - ~~Intra-Day:~~
+    - ~~2m~~
+    - ~~3m~~
+    - ~~5m~~
   - Swing Day:
     - 15 m
     - 30 m
@@ -60,8 +60,8 @@ This project will focus on creating, back testing, forecasting, and analyzing al
 - Gather relevant features such as opening price, closing price, highest price, lowest price, and volume for each time intervals. 
 - Time Periods: Model Building
   - Training and back-testing period: 10 years (normal train/test split)
-  - 2007 – 2017
-- Forecasting: Model Implementation and Review - Forward testing period: 5 years (yearly)
+  - 2017 – 2019
+- Forecasting: Quant Algo Fund Simulation - Forward testing period: 5 years (yearly)
   - 2018 – 2022
 
 2. Data Preprocessing:
