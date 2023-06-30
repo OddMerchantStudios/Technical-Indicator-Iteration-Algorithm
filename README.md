@@ -44,19 +44,19 @@ This project will focus on creating, back testing, forecasting, and analyzing al
   - % guidance change (+/-/0)
   - EBITDA
 
-• Trading Timeframes for data collection and analysis include:
-- Intra-Day:
-  - 2m
-  - 3m
-  - 5m
-- Swing Day:
-  - 15 m
-  - 30 m
-  - Daily
-- Position Day:
-  - Daily
-  - Weekly
-  - Monthly
+- Trading Timeframes for data collection and analysis include:
+  - Intra-Day:
+    - 2m
+    - 3m
+    - 5m
+  - Swing Day:
+    - 15 m
+    - 30 m
+    - Daily
+  - Position Day:
+    - Daily
+    - Weekly
+    - Monthly
 - Gather relevant features such as opening price, closing price, highest price, lowest price, and volume for each time intervals. 
 - Time Periods: Model Building
   - Training and back-testing period: 10 years (normal train/test split)
