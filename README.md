@@ -95,3 +95,71 @@ This project will focus on creating, back testing, forecasting, and analyzing al
  - Iterate and refine the model based on the evaluation results.
  - Explore different algorithms, feature combinations, or data transformations to improve the model's accuracy and robustness.
  - Continuously monitor and update the model's performance as new data becomes available.
+
+--------------
+## Notebooks
+- [JUPYTER LAB NOTEBOOK LINK](./main.ipynb)
+- [Final Analysis](./file.ipynb)
+---------
+
+## Getting Started - Prerequisites
+-----------
+### ​You must have Python 3 installed:
+
+```
+python3 --version
+```
+
+### You must have Anaconda installed:
+```
+$ anaconda --version
+```
+
+### Install Environmnet:
+```
+conda create -n <env_name> python=3.7 anaconda
+```
+
+### Clone/Run Repository 
+```
+git clone git@github.com:OddMerchantStudios/Project-2-Algo.git
+```
+
+### Activate Environment
+```
+conda activate <env_name>
+```
+
+### Install Dependencies
+- Please make sure you are in your intended activate environment before running this command
+```
+pip install -r requirements.txt
+```
+
+
+## Built With
+
+- [![Python 3.7.13](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)]([https://www.python.org/downloads/release/python-3713/)
+[![Python](https://img.shields.io/badge/Python-3.7.13-blue)](https://www.python.org/downloads/release/python-3713/) - Programming Language
+- [![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/#) - Data maniupulation library
+- [![Numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/) - Multi-dimensional array library
+- [![Plotly](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/python/) - Visualization library for plots
+- [![Matplotlib](https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=plotly&logoColor=white)](https://matplotlib.org/) - Visualization library for plots
+- [![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=plotly&logoColor=white)](https://seaborn.pydata.org/) - Visualization library for plots
+- [![Alpaca](https://img.shields.io/badge/Alpaca-3776AB?style=for-the-badge&logo=plotly&logoColor=white)](https://alpaca.markets/) - Trading API
+- [![HVPlot](https://img.shields.io/badge/HVPlot-3776AB?style=for-the-badge&logo=plotly&logoColor=white)](https://hvplot.holoviz.org/) - Visualization library for plots
+- [![PyViz](https://img.shields.io/badge/PyViz-3776AB?style=for-the-badge&logo=plotly&logoColor=white)](https://pyviz.org/) - Visualization library for plots
+- [![GeoViews](https://img.shields.io/badge/GeoViews-3776AB?style=for-the-badge&logo=plotly&logoColor=white)](https://geoviews.org/) - Visualization library for plots
+- [![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)](https://jupyter.org/) - Notebook IDE
+- [![JupyterLab](https://img.shields.io/badge/JupyterLab-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)](https://jupyter.org/) - Notebook IDE
+- [![Anaconda](https://img.shields.io/badge/Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white)](https://www.anaconda.com/) - Data science platform
+- [![Yahoo Finance API](https://img.shields.io/badge/Yahoo%20Finance%20API-800080?style=for-the-badge&logo=yahoo&logoColor=white)](https://pypi.org/project/yfinance/) - Yahoo Finance API
+- [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/) - Machine learning library
+- [![Quantstats](https://img.shields.io/badge/Quantstats-800080?style=for-the-badge&logo=yahoo&logoColor=white)](https://pypi.org/project/quantstats/) - Quantstats library
+- [![PyPortfolioOpt](https://img.shields.io/badge/PyPortfolioOpt-800080?style=for-the-badge&logo=yahoo&logoColor=white)](https://pypi.org/project/pyportfolioopt/) - PyPortfolioOpt library
+- [![Cufflinks](https://img.shields.io/badge/Cufflinks-800080?style=for-the-badge&logo=yahoo&logoColor=white)](https://pypi.org/project/cufflinks/) - Cufflinks library
+
+## Authors
+- **Kirill Chugunov** - [LinkedIn](https://www.linkedin.com/in/kirill-chugunov-b680811a4/) | [Github](https://github.com/OddMerchantStudios)
+- **Hiren Patel** - [LinkedIn](https://www.linkedin.com/in/hdpatel/) | [Github](https://github.com/hpnhs25)
+- **Varoujan John Khorozian** - [LinkedIn](https://www.linkedin.com/in/varoujan-khorozian/) | [Github](https://github.com/vkhorozian)

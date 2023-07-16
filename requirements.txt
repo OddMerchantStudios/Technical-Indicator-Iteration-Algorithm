@@ -1,0 +1,10 @@
+jupyterlab
+yfinance
+quantstats
+pyfolio
+cufflinks
+python-dotenv
+hvplot
+pandas-datareader 
+seaborn
+alpaca-trade-api
