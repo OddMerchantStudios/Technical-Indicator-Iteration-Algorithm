@@ -56,7 +56,7 @@ Rank Ordering of the best Buy Indicators that showed up the most in our algo mod
 5.  Chaikin Oscillator Signal
 6.  MFI Signal
 
-![alln01](bokeh_plot_18.png)
+![alln01](img/bokeh_plot_18.png)
 
 Rank Ordering of the best Buy Indicators that showed up the most in our algo models based on sharpe ratios:
 
@@ -67,7 +67,7 @@ Rank Ordering of the best Buy Indicators that showed up the most in our algo mod
 5.  Chaikin Oscillator Signal
 6.  MFI Signal
 
-![alln02](bokeh_plot_20.png)
+![alln02](img/bokeh_plot_20.png)
 
 #### **Best Sell Indicators for Algo Models** #### 
 
@@ -77,7 +77,7 @@ Rank Ordering of the best Sell Indicators that showed up the most in our algo mo
 2.  EMA 20
 3.  ADX Signal
 
-![alln03](bokeh_plot_19.png)
+![alln03](img/bokeh_plot_19.png)
 
 Rank Ordering of the best Sell Indicators that showed up the most in our algo models based on sharpe ratios:
 
@@ -85,23 +85,23 @@ Rank Ordering of the best Sell Indicators that showed up the most in our algo mo
 2.  ADX Signal
 3.  EMA 20
 
-![alln04](bokeh_plot_21.png)
+![alln04](img/bokeh_plot_21.png)
 
 Rank ordering by returns or Sharpe ratio does not show much difference in performance.  We do see select indicators showing up more consistently in buy and sell indicators.  We also see stocks have a differing mix of indicators that produces the most efficient algo model.  There is no one true model that wins across the board for all stocks.
 
  **Do Algo trading models utilizing the optimized indicator model for each specific stock beat a buy and hold strategy?** 
 
- ![alln05](bokeh_plot_11.png)
+ ![alln05](img/bokeh_plot_11.png)
 
-![alln06](bokeh_plot_17.png)
+![alln06](img/bokeh_plot_17.png)
 
 These two charts clearly show algo models can beat buy and hold strategies in terms of cumulative returns and sharpe ratio performance over the time period analyzed (2017-2023).  This holds true with or without segmentation, drilling down deeper to understand these trends we find additional insights.
 
 #### **No Segmentation: Algo Models v Buy and Hold (BNH) - Sharpe Ratio/Cum. Returns Ranking by Stock:** ####
 
-![alln07](bokeh_plot_12.png)
+![alln07](img/bokeh_plot_12.png)
 
-![alln08](bokeh_plot_6.png)
+![alln08](img/bokeh_plot_6.png)
 
 We see the best algo models increase the sharpe ratio efficiencies for 62 / 95 stocks or ~67% of stocks in the sample.  The cumulative returns however seem similar to worse off across all stocks with one stock (MARA) driving most of the higher returns within the algo modeling group.  
 
@@ -109,9 +109,9 @@ This tells us in a no segmentation scenario, algo models generally increase retu
 
 #### **With Segmentation: Algo Models v Buy and Hold (BNH) - Sharpe Ratio/Cum. Returns Ranking by Stock: Top 30%** ####
 
-![alln09](bokeh_plot_13.png)
+![alln09](img/bokeh_plot_13.png)
 
-![alln10](bokeh_plot_7.png)
+![alln10](img/bokeh_plot_7.png)
 
 When we begin segmenting the population by sharpe ratio, we see a little more separation in model performance vs. BNH in both sharpe ratio performance and cum. return performance vs No segmentation.
 
@@ -119,17 +119,17 @@ We also start seeing a trend where algo models increase performance separation v
 
 #### **With Segmentation: Algo Models v Buy and Hold (BNH) - Sharpe Ratio/Cum. Returns Ranking by Stock: Top 30-60%** ####
 
-![alln11](bokeh_plot_14.png)
+![alln11](img/bokeh_plot_14.png)
 
-![alln12](bokeh_plot_8.png)
+![alln12](img/bokeh_plot_8.png)
 
 The next tier of sharpe ratios show similar trends continue with higher sharpe ratios across most stocks with returns again very similar but with two major outliers driving overall performance of algo model returns vs. BNH.
 
 #### **With Segmentation: Algo Models v Buy and Hold (BNH) - Sharpe Ratio/Cum. Returns Ranking by Stock: Bottom 30%** ####
 
-![alln13](bokeh_plot_15.png)
+![alln13](img/bokeh_plot_15.png)
 
-![alln14](bokeh_plot_9.png)
+![alln14](img/bokeh_plot_9.png)
 
 Again, we see similar patterns in the bottom 30% of stocks ranked by sharpe ratio; however, we also see more impact of algo models on both sharpe ratio impact and cumulative stock returns.  This is showing us algo models may have more impact on lower performing stock returns vs. higher performing stock returns.
 
@@ -143,7 +143,7 @@ Again, we see similar patterns in the bottom 30% of stocks ranked by sharpe rati
 --------------
 ## Notebooks
 - [JUPYTER LAB NOTEBOOK LINK](./main.ipynb)
-- [Final Analysis](./file.ipynb)
+- [Final Analysis](./README.md)
 ---------
 
 ## Getting Started - Prerequisites
