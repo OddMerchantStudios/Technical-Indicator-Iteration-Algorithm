@@ -1,100 +1,144 @@
-# Project 2 Outline:
+# Project 2:  Analysis and Backtesting of Trading Indicators to Identify Optimal Trading Models
 
-## Project Goal:
+## Project Goal: 
 
-This project will focus on creating, back testing, forecasting, and analyzing algorithmic trading strategies.  This project will focus on creating and testing algos based on technical and fundamental analysis.  We’ll be creating strategies for:
+This project will focus on creating, backtesting, and analyzing Quantitative Algorithmic Trading model performance on a sample of optionable stocks.  The goal is to answer the following business questions:
 
-    - Intra-day trading (hourly holding period) 
-    - Swing trades (1-20 day holding periods)
-    - Position trades (6-12 month holding periods)
+ * Which technical indicators are the best indicators to use in building quantitative algo trading models?
+ * Do Algo trading models utilizing the optimized indicator model for each specific stock beat a buy and hold strategy?
+ * Do we see varied indicator performance by stock being traded such that some indicators perform better on certain stocks?
 
-1. Data Collection: 
-- Obtain historical data for the desired timeframe.
-- Yahoo Finance data, Interactive Brokers data will be our primary data sources.
-- Stocks, ETFs, Indexes will be analyzed along with the following Technical and Fundamental features: 
-- Technical indicators under consideration in algo model building include:
+
+### **1. Data Collection:** ###
+
+* Obtain historical data for the desired timeframe.
+* Yahoo Finance data will be our primary data sources.
+* Project 1 Optionable Stock Universe will be our sample of stocks on which to test and build indicator based trading models.
+* Technical indicators under consideration in algo model building include:
   - Squeeze Indicator (Bollinger Bands + Keltner  Channels)
-  - 8 and 21 EMA
+  - 20 EMA
+  - 50 EMA
   - MACD Two-Line
   - ADX Indicator
-  - Other potential features to test: Stochastic Oscillator, RSI
-- ~~Fundamental metrics under considering for model building and forecasting include:~~
-  - ~~P/E ratio~~
-  - ~~Industry Sector~~
-  - ~~Price-Sales~~
-  - ~~Price-Book~~
-  - ~~PEG Ratio~~
-  - ~~Net Profit Margin~~
-  - ~~ROE~~
-  - ~~ROA~~
-  - ~~ROI~~
-  - ~~EPS beat last quarter (Y/N)~~
-  - ~~% EPS beats last 4 quarter’s (x/4)~~
-  - ~~% EPS beats last 8 quarter’s (x/8)~~
-  - ~~EPS beat % last quarter (x%)~~
-  - ~~% EPS beats last 4 quarter’s (x%)~~
-  - ~~% EPS beats last 8 quarter’s (x%)~~
-  - ~~Sales beat last quarter (Y/N)~~
-  - ~~% Sales beats last 4 quarter’s (x/4)~~
-  - ~~% Sales beats last 8 quarter’s (x/8)~~
-  - ~~Sales beat % last quarter (x%)~~
-  - ~~% Sales beats last 4 quarter’s (x%)~~
-  - ~~% Sales beats last 8 quarter’s (x%)~~
-  - ~~Forward guidance change (up/down/no)~~
-  - ~~% guidance change (+/-/0)~~
-  - ~~EBITDA~~
+  - MFI
+  - Chaikin Oscillator
+  - Bollinger Bands
+  - Ichimoku Cloud (time permitting)
 
-- Trading Timeframes for data collection and analysis include:
-  - ~~Intra-Day:~~
-    - ~~2m~~
-    - ~~3m~~
-    - ~~5m~~
-  - Swing Day:
-    - 15 m
-    - 30 m
-    - Daily
-  - Position Day:
-    - Daily
-    - Weekly
-    - Monthly
-- Gather relevant features such as opening price, closing price, highest price, lowest price, and volume for each time intervals. 
-- Time Periods: Model Building
-  - Training and back-testing period: 10 years (normal train/test split)
-  - 2017 – 2020
-- Forecasting: Quant Algo Fund Simulation - Forward testing period: 5 years (yearly)
-  - 2021 – 2023
+ * Trading Timeframes for data collection and analysis include:
+ * We will be focused on daily timeframe position trades across our ~90 optionable stock universe sample
+ * Gather relevant features such as opening price, closing price, highest price, lowest price, and volume for each time intervals. 
+ * Time Period used for analysis:
+   - 2017 – 2022
 
-2. Data Preprocessing:
-   - Perform data cleaning by handling missing values,  outliers, and inconsistencies.
-   - Explore the dataset to identify any potential  patterns or correlations between features.
-   - Split the dataset into training and testing sets,  considering an appropriate ratio (e.g., 80% for  training, 20% for testing).
-3. Feature Engineering:
-   - Extract relevant features from the dataset that can  capture the characteristics of momentum price  movement in various trading instruments (stocks,  ETFs, Indexes).
-   - Examples of features could include price  volatility, relative price changes, technical  indicators (e.g., Bollinger Bands, moving averages),  or any other domain-specific indicators that are  known to be relevant.
-4. Model Selection and Training:
-  -  Choose a suitable machine learning algorithm for binary classification (buy/sell signals, performance segments by % returns, price action patterns).
-  - Intra-Day Algo Models:
-    - Return Rank Segmentation (last month returns, last quarter, last 6 months, last 12 months)
-    - Trend/Swing/Chop Segmentation (OHLC prices by time)
-    - Technical and Fundamental signal model (features above)
- - Swing Trades Algo Models:
-    - Return Rank Segmentation
-    - Trend/Swing/Chop Segmentation
-    - Technical and Fundamental signal model
- - Position Trades Algo Models:
-   - Return Rank Segmentation
-   - Trend/Swing/Chop Segmentation
-   - Technical and Fundamental signal model
- - Train the model using the training dataset, using appropriate techniques such as cross-validation and hyper parameter tuning to optimize model performance.
- - Evaluate the model's performance metrics, such as accuracy, precision, recall, and F1-score, to assess its effectiveness in predicting momentum trades.
-5. Model Deployment and Testing:
- - Deploy the trained model in a trading algo strategy.
- - Apply the model to the testing dataset and evaluate its performance metrics on unseen data.
- - Analyze the model's predictions and compare them with the actual market movement to assess the model's accuracy and reliability.
-6. Iteration and Improvement:
- - Iterate and refine the model based on the evaluation results.
- - Explore different algorithms, feature combinations, or data transformations to improve the model's accuracy and robustness.
- - Continuously monitor and update the model's performance as new data becomes available.
+### **2. Data Preprocessing:** ###
+  * Perform data cleaning by handling missing values,  outliers, and inconsistencies.
+  * Explore the dataset to identify any potential  patterns or correlations between features.
+  * Build a looping function that iterates through all possible indicator combinations in signal modeling.
+  * Rank order best models by stock being analyzed using Sharpe Ratio and Cumulative Returns.
+  * Develop Segmentation schemes using Sharpe Ratios to see if we can improve trading model performance.
+
+### **3. Data Analysis and Conclusions:** ###
+
+
+ **Which technical indicators we're testing are the best indicators to use in building quantitative algo trading models?**
+
+* When analyzing the best indicators for algo models we split the testing into buy signal indicators and sell signal indicators so we're not always using the same indicator for buying and selling.  
+
+#### **Best Buy Indicators for Algo Models** #### 
+
+Rank Ordering of the best Buy Indicators that showed up the most in our algo models based on cumulative returns:
+
+1.  The Squeeze Signal 
+2.  EMA 50
+3.  MACD Signal
+4.  EMA 20
+5.  Chaikin Oscillator Signal
+6.  MFI Signal
+
+![alln01](bokeh_plot_18.png)
+
+Rank Ordering of the best Buy Indicators that showed up the most in our algo models based on sharpe ratios:
+
+1.  The Squeeze Signal 
+2.  MACD Signal
+3.  EMA 50
+4.  EMA 20
+5.  Chaikin Oscillator Signal
+6.  MFI Signal
+
+![alln02](bokeh_plot_20.png)
+
+#### **Best Sell Indicators for Algo Models** #### 
+
+Rank Ordering of the best Sell Indicators that showed up the most in our algo models based on cumulative returns:
+
+1.  Bollinger Band Signal 
+2.  EMA 20
+3.  ADX Signal
+
+![alln03](bokeh_plot_19.png)
+
+Rank Ordering of the best Sell Indicators that showed up the most in our algo models based on sharpe ratios:
+
+1.  Bollinger Band Signal  
+2.  ADX Signal
+3.  EMA 20
+
+![alln04](bokeh_plot_21.png)
+
+Rank ordering by returns or Sharpe ratio does not show much difference in performance.  We do see select indicators showing up more consistently in buy and sell indicators.  We also see stocks have a differing mix of indicators that produces the most efficient algo model.  There is no one true model that wins across the board for all stocks.
+
+ **Do Algo trading models utilizing the optimized indicator model for each specific stock beat a buy and hold strategy?** 
+
+ ![alln05](bokeh_plot_11.png)
+
+![alln06](bokeh_plot_17.png)
+
+These two charts clearly show algo models can beat buy and hold strategies in terms of cumulative returns and sharpe ratio performance over the time period analyzed (2017-2023).  This holds true with or without segmentation, drilling down deeper to understand these trends we find additional insights.
+
+#### **No Segmentation: Algo Models v Buy and Hold (BNH) - Sharpe Ratio/Cum. Returns Ranking by Stock:** ####
+
+![alln07](bokeh_plot_12.png)
+
+![alln08](bokeh_plot_6.png)
+
+We see the best algo models increase the sharpe ratio efficiencies for 62 / 95 stocks or ~67% of stocks in the sample.  The cumulative returns however seem similar to worse off across all stocks with one stock (MARA) driving most of the higher returns within the algo modeling group.  
+
+This tells us in a no segmentation scenario, algo models generally increase returns per unit of risk overall but one stock is skewing the cumulative returns performance vs BNH.
+
+#### **With Segmentation: Algo Models v Buy and Hold (BNH) - Sharpe Ratio/Cum. Returns Ranking by Stock: Top 30%** ####
+
+![alln09](bokeh_plot_13.png)
+
+![alln10](bokeh_plot_7.png)
+
+When we begin segmenting the population by sharpe ratio, we see a little more separation in model performance vs. BNH in both sharpe ratio performance and cum. return performance vs No segmentation.
+
+We also start seeing a trend where algo models increase performance separation vs. BNH where BNH returns are poor relative to the market.  Algo models don't increase return and ratio performance as effectively on stocks alreaedy performing well on these metrics.
+
+#### **With Segmentation: Algo Models v Buy and Hold (BNH) - Sharpe Ratio/Cum. Returns Ranking by Stock: Top 30-60%** ####
+
+![alln11](bokeh_plot_14.png)
+
+![alln12](bokeh_plot_8.png)
+
+The next tier of sharpe ratios show similar trends continue with higher sharpe ratios across most stocks with returns again very similar but with two major outliers driving overall performance of algo model returns vs. BNH.
+
+#### **With Segmentation: Algo Models v Buy and Hold (BNH) - Sharpe Ratio/Cum. Returns Ranking by Stock: Bottom 30%** ####
+
+![alln13](bokeh_plot_15.png)
+
+![alln14](bokeh_plot_9.png)
+
+Again, we see similar patterns in the bottom 30% of stocks ranked by sharpe ratio; however, we also see more impact of algo models on both sharpe ratio impact and cumulative stock returns.  This is showing us algo models may have more impact on lower performing stock returns vs. higher performing stock returns.
+
+ **Do we see varied indicator performance by stock being traded such that some indicators perform better on certain stocks?**
+
+ Our analysis does show the best indicator model to maximizing sharpe ratio and cumulative returns for each stock varies and is not consistently one single indicator model.  This tells us we should customize algo trading models for each stock to maximize investment performance.
+
+ Sample output below shows model performance metrics for one stock.  Analyzing this for ~65-70 winning algo models gives us a broad portfolio view of performance (too lengthy a print out to go over all 65+ algo model performance summaries).
+
 
 --------------
 ## Notebooks
