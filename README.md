@@ -47,7 +47,7 @@ This project will focus on creating, backtesting, and analyzing Quantitative Alg
 
 #### **Best Buy Indicators for Algo Models** #### 
 
-Rank Ordering of the best Buy Indicators that showed up the most in our algo models based on cumulative returns:
+Rank Ordering of the best ``Buy`` Indicators that showed up the most in our algo models based on ``cumulative returns``:
 
 1.  The Squeeze Signal 
 2.  EMA 50
@@ -58,7 +58,7 @@ Rank Ordering of the best Buy Indicators that showed up the most in our algo mod
 
 ![alln01](img/bokeh_plot_18.png)
 
-Rank Ordering of the best Buy Indicators that showed up the most in our algo models based on sharpe ratios:
+Rank Ordering of the best ``Buy`` Indicators that showed up the most in our algo models based on ``sharpe ratios``:
 
 1.  The Squeeze Signal 
 2.  MACD Signal
@@ -71,7 +71,7 @@ Rank Ordering of the best Buy Indicators that showed up the most in our algo mod
 
 #### **Best Sell Indicators for Algo Models** #### 
 
-Rank Ordering of the best Sell Indicators that showed up the most in our algo models based on cumulative returns:
+Rank Ordering of the best ``Sell`` Indicators that showed up the most in our algo models based on ``cumulative returns``:
 
 1.  Bollinger Band Signal 
 2.  EMA 20
@@ -79,7 +79,7 @@ Rank Ordering of the best Sell Indicators that showed up the most in our algo mo
 
 ![alln03](img/bokeh_plot_19.png)
 
-Rank Ordering of the best Sell Indicators that showed up the most in our algo models based on sharpe ratios:
+Rank Ordering of the best ``Sell`` Indicators that showed up the most in our algo models based on ``sharpe ratios``:
 
 1.  Bollinger Band Signal  
 2.  ADX Signal
@@ -139,6 +139,9 @@ Again, we see similar patterns in the bottom 30% of stocks ranked by sharpe rati
 
  Sample output below shows model performance metrics for one stock.  Analyzing this for ~65-70 winning algo models gives us a broad portfolio view of performance (too lengthy a print out to go over all 65+ algo model performance summaries).
 
+![strategy chart](img/strategy_1.png)
+
+![strategy metrics](img/strategy_2.png)
 
 --------------
 ## Notebooks
