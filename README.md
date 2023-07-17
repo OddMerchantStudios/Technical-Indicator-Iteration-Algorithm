@@ -74,16 +74,16 @@ Rank Ordering of the best ``Buy`` Indicators that showed up the most in our algo
 Rank Ordering of the best ``Sell`` Indicators that showed up the most in our algo models based on ``cumulative returns``:
 
 1.  Bollinger Band Signal 
-2.  EMA 20
-3.  ADX Signal
+2.  MACD Signal
+3.  EMA 20 Signal
 
 ![alln03](img/bokeh_plot_19.png)
 
 Rank Ordering of the best ``Sell`` Indicators that showed up the most in our algo models based on ``sharpe ratios``:
 
 1.  Bollinger Band Signal  
-2.  ADX Signal
-3.  EMA 20
+2.  MACD Signal
+3.  EMA 20 Signal
 
 ![alln04](img/bokeh_plot_21.png)
 
@@ -137,7 +137,7 @@ Again, we see similar patterns in the bottom 30% of stocks ranked by sharpe rati
 
  Our analysis does show the best indicator model to maximizing sharpe ratio and cumulative returns for each stock varies and is not consistently one single indicator model.  This tells us we should customize algo trading models for each stock to maximize investment performance.
 
- Sample output below shows model performance metrics for one stock.  Analyzing this for ~65-70 winning algo models gives us a broad portfolio view of performance (too lengthy a print out to go over all 65+ algo model performance summaries).
+ Sample output below shows model performance metrics for one stock.  Analyzing this for ~59-68 winning algo models gives us a broad portfolio view of performance (too lengthy a print out to go over all 65+ algo model performance summaries).
 
 ![strategy chart](img/strategy_1.png)
 
